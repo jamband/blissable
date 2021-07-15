@@ -1,0 +1,141 @@
+@use "sass:color";
+@use "sass:map";
+
+// Color system
+$primary:       #d8dee9;
+$secondary:     #bf616a;
+$success:       #a3be8c;
+$danger:        #bf616a;
+$dark:          #262b34;
+
+$colors: (
+);
+
+$theme-colors: (
+  "primary":      $primary,
+  "secondary":    $secondary,
+  "success":      $success,
+  "danger":       $danger,
+  "dark":         $dark,
+);
+
+// Options
+$enable-caret:                                false;
+$enable-shadows:                              true;
+$enable-smooth-scroll:                        false;
+
+// Spacing
+$spacer: 1rem;
+
+$spacers: (
+  0: 0,
+  1: $spacer * 0.25,
+  2: $spacer * 0.5,
+  3: $spacer,
+  4: $spacer * 1.5,
+  5: $spacer * 3,
+  6: $spacer * 4.5,
+  7: $spacer * 6,
+  8: $spacer * 7.5,
+  9: $spacer * 9
+);
+
+// Body
+$body-bg:     #2e3440;
+$body-color:  #d8dee9;
+
+// Links
+$link-color:                              color.scale($body-color, $lightness: -15%);
+$link-hover-color:                        $body-color;
+$link-decoration:                         none;
+
+// Grid breakpoints
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+);
+
+// Grid containers
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+);
+
+// Components
+$border-radius:                         0.25rem;
+$border-radius-sm:                      0.2rem;
+$box-shadow-sm:                         0 0.125rem 0.25rem color.scale($body-bg, $lightness: -10%, $alpha: -20%);
+
+// Typography
+$text-muted:                            #516790;
+$mark-bg:                               $secondary;
+
+// Buttons + Forms
+$input-btn-focus-box-shadow:            0 0 0 0.2rem color.scale($primary, $lightness: 0%, $alpha: -40%);
+
+// Forms
+$input-bg:                              $dark;
+$input-disabled-bg:                     color.scale($body-bg, $lightness: 10%);
+$input-color:                           $body-color;
+$input-border-color:                    color.scale($body-bg, $lightness: 10%);
+$input-placeholder-color:               color.scale($body-color, $lightness: -55%);
+
+// Z-index
+$zindex-toast:                      2000;
+
+// Navbar
+$navbar-nav-link-padding-x:         0.8rem;
+$navbar-toggler-font-size:          1rem;
+$navbar-toggler-focus-width:        none;
+$navbar-dark-color:                 $link-color;
+$navbar-dark-hover-color:           $body-color;
+$navbar-dark-active-color:          $body-color;
+$navbar-dark-disabled-color:        color.scale($link-color, $lightness: -40%);
+$navbar-dark-toggler-border-color:  transparent;
+
+// Dropdowns
+$dropdown-bg:                       $dark;
+$dropdown-link-color:               $link-color;
+$dropdown-link-hover-color:         $primary;
+$dropdown-link-hover-bg:            $secondary;
+$dropdown-link-active-color:        $dark;
+$dropdown-link-active-bg:           $secondary;
+
+// Pagination
+$pagination-bg:                     transparent;
+$pagination-focus-color:            $dark;
+$pagination-focus-bg:               $secondary;
+$pagination-focus-box-shadow:       0 0 0 0.25rem color.scale($secondary, $lightness: 0%, $alpha: -75%);
+$pagination-border-width:           0;
+$pagination-hover-color:            $link-color;
+$pagination-hover-bg:               transparent;
+$pagination-disabled-color:         $text-muted;
+$pagination-disabled-bg:            transparent;
+
+// Toasts
+$toast-font-size:                   1rem;
+$toast-color:                       $body-color;
+$toast-background-color:            color.scale($body-bg, $lightness: 10%, $alpha: -10%);
+$toast-border-width:                0;
+$toast-box-shadow:                  $box-shadow-sm;
+
+// Modals
+$modal-backdrop-opacity:            0.3;
+
+// Progress bars
+$progress-bg:                       $body-color;
+$progress-border-radius:            0.1rem;
+$progress-bar-bg:                   $secondary;
+
+// Breadcrumbs
+$breadcrumb-divider-color:          $link-color;
+$breadcrumb-active-color:           $text-muted;
+
+// Close
+$btn-close-color:                   $primary;
+
+// Offcanvas
+$offcanvas-padding-y:               0.8rem;
+$offcanvas-padding-x:               0.8rem;
+$offcanvas-bg-color:                $body-bg;

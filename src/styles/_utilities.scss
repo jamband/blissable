@@ -1,0 +1,20 @@
+@use "sass:map";
+
+// Add utilities
+
+// Modify utilities
+
+// Utilities
+$utilities: map.merge(
+  $utilities,
+  (
+    "border": null,
+    "border-bottom": null,
+    "border-color": null,
+    "border-left": null,
+    "border-right": null,
+    "border-top": null,
+    "float": null,
+    "overflow": null,
+  )
+);

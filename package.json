@@ -1,0 +1,42 @@
+{
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "svelte-kit dev",
+    "build": "svelte-kit build",
+    "preview": "svelte-kit preview",
+    "checks": "svelte-check --tsconfig ./tsconfig.json",
+    "prettier": "prettier --check .",
+    "eslint": "eslint .",
+    "stylelint": "stylelint **/*.{scss,svelte}",
+    "clear": "rm -rf .svelte-kit build",
+    "clean": "rm -rf .svelte-kit build node_modules"
+  },
+  "devDependencies": {
+    "@fullhuman/postcss-purgecss": "^4.0.3",
+    "@popperjs/core": "^2.9.2",
+    "@sveltejs/adapter-static": "^1.0.0-next.13",
+    "@sveltejs/kit": "^1.0.0-next.129",
+    "@types/bootstrap": "^5.0.17",
+    "@typescript-eslint/eslint-plugin": "^4.28.3",
+    "@typescript-eslint/parser": "^4.28.3",
+    "bootstrap": "^5.0.2",
+    "eslint": "^7.30.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-svelte3": "^3.2.0",
+    "postcss": "^8.3.5",
+    "prettier": "2.3.2",
+    "prettier-plugin-svelte": "^2.3.1",
+    "rollup": "^2.53.2",
+    "sass": "^1.35.2",
+    "stylelint": "^13.13.1",
+    "stylelint-config-standard": "^22.0.0",
+    "stylelint-order": "^4.1.0",
+    "stylelint-scss": "^3.19.0",
+    "svelte": "^3.38.3",
+    "svelte-check": "^2.2.2",
+    "svelte-preprocess": "^4.7.4",
+    "tslib": "^2.3.0",
+    "typescript": "^4.3.5"
+  }
+}

@@ -1,0 +1,15 @@
+@import "../../styles/variables";
+@import "../../../node_modules/bootstrap/scss/mixins/breakpoints";
+
+.clickable {
+  &:hover {
+    background-color: var(--bs-secondary);
+    color: var(--bs-dark);
+  }
+}
+
+.text {
+  @include media-breakpoint-down(sm) {
+    font-size: 80%;
+  }
+}
