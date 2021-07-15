@@ -17,9 +17,12 @@
 
 <script lang="ts">
   import { IconChevronRight } from "$icons";
+  import { Page } from "$layouts/page";
+
   export let links: Link[];
 </script>
 
+<Page />
 {#each links as { href, text } (href)}
   <a {href} class="p-1 ps-3 h2 nav-link"
     >{text}<IconChevronRight size="0.6em" class="ms-1" /></a
