@@ -14,4 +14,4 @@ Blissable is my private playground for SvelteKit.
 
 ## License
 
-Suerte is licensed under the MIT license.
+Blissable is licensed under the MIT license.
