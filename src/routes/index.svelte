@@ -24,15 +24,21 @@
 
 <Page />
 {#each links as { href, text } (href)}
-  <a {href} class="p-1 ps-3 h2 nav-link"
-    >{text}<IconChevronRight size="0.6em" class="ms-1" /></a
-  >
+  <ul class="nav flex-column">
+    <li class="nav-item">
+      <h2>
+        <a {href} class="nav-link"
+          >{text}<IconChevronRight size="0.6em" class="ms-1" /></a
+        >
+      </h2>
+    </li>
+  </ul>
 {/each}
 
 <style lang="scss">
   @import "../styles/variables";
 
-  .nav-link {
+  a {
     border-radius: $border-radius;
 
     &:hover {
