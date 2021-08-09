@@ -77,9 +77,6 @@
 </div>
 
 <style lang="scss">
-  @import "../styles/variables";
-  @import "../../node_modules/bootstrap/scss/mixins/breakpoints";
-
   article {
     align-items: center;
     display: flex;
