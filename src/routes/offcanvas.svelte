@@ -60,17 +60,21 @@
   </div>
   <div class="p-0 offcanvas-body">
     {#each links as { href, text } (href)}
-      <a {href} class="d-flex px-4 nav-link" data-bs-dismiss="offcanvas">
-        <div class="flex-grow-1">{text}</div>
-        <div><IconChevronRight size="0.8em" /></div>
-      </a>
+      <div data-bs-dismiss="offcanvas">
+        <a {href} class="d-flex px-4 nav-link">
+          <div class="flex-grow-1">{text}</div>
+          <div><IconChevronRight size="0.8em" /></div>
+        </a>
+      </div>
     {/each}
     <hr />
     {#each moreLinks as { href, text } (href)}
-      <a {href} class="d-flex px-4 nav-link" data-bs-dismiss="offcanvas">
-        <div class="flex-grow-1">{text}</div>
-        <div><IconChevronRight size="0.8em" /></div>
-      </a>
+      <div data-bs-dismiss="offcanvas">
+        <a {href} class="d-flex px-4 nav-link">
+          <div class="flex-grow-1">{text}</div>
+          <div><IconChevronRight size="0.8em" /></div>
+        </a>
+      </div>
     {/each}
     <div class="mb-4" />
   </div>

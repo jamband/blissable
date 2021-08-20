@@ -1,11 +1,11 @@
 <script lang="ts">
+  import "$styles/app.scss";
   import { navigating } from "$app/stores";
   import { Notification } from "$components/notification";
   import { APP_DESCRIPTION } from "$constants/app";
   import { Footer } from "$layouts/footer";
   import { Header } from "$layouts/header";
   import { siteHealth } from "$stores/site-health";
-  import "$styles/app.scss";
 
   $: if ($navigating && $siteHealth !== "good") {
     siteHealth.set("good");
