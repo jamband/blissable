@@ -19,3 +19,9 @@
     </ul>
   </nav>
 </footer>
+
+<style>
+  footer {
+    padding-bottom: env(safe-area-inset-bottom);
+  }
+</style>
