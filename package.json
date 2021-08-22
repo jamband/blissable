@@ -4,7 +4,7 @@
   "scripts": {
     "dev": "svelte-kit dev",
     "build": "svelte-kit build",
-    "postbuild": "mv build/404/index.html build/404.html",
+    "postbuild": "mv build/404/index.html build/404.html && rmdir build/404",
     "preview": "svelte-kit preview",
     "checks": "svelte-check --tsconfig ./tsconfig.json",
     "prettier": "prettier --check .",
