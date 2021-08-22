@@ -3,7 +3,7 @@
   import type { Link } from "$types/link";
 
   export const load = async ({ fetch }: LoadInput) => {
-    const _links = await fetch("/api/links");
+    const _links = await fetch("/links.json");
     const links = (await _links.json()) as Link[];
     links.shift();
 

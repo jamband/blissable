@@ -3,10 +3,10 @@
   import type { Link } from "$types/link";
 
   export const load = async ({ fetch }: LoadInput) => {
-    const _links = await fetch("/api/links");
+    const _links = await fetch("/links.json");
     const links = (await _links.json()) as Link[];
 
-    const _moreLinks = await fetch("/api/more-links");
+    const _moreLinks = await fetch("/more-links.json");
     const moreLinks = (await _moreLinks.json()) as Link[];
 
     return {
