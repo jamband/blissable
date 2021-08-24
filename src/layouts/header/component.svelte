@@ -17,12 +17,14 @@
 </script>
 
 <header class="fixed-top text-center py-3 bg-dark fw-bold">
-  <a class="me-1 text-primary" href="/">{APP_NAME}</a>
-  {#if loading}
-    <Loading />
-  {:else if $siteHealth === "bad"}
-    <IconEmojiFrownFill />
-  {:else}
-    <IconEmojiSmileFill />
-  {/if}
+  <a class="me-1 px-3 py-2 text-primary" href="/">
+    <span class="me-1">{APP_NAME}</span>
+    {#if loading}
+      <Loading />
+    {:else if $siteHealth === "bad"}
+      <IconEmojiFrownFill />
+    {:else}
+      <IconEmojiSmileFill />
+    {/if}
+  </a>
 </header>
