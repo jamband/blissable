@@ -3,16 +3,13 @@
   import type { Link } from "$types/link";
 
   export const load = async ({ fetch }: LoadInput) => {
-    const _links = await fetch("/links.json");
-    const links = (await _links.json()) as Link[];
-
-    const _moreLinks = await fetch("/more-links.json");
-    const moreLinks = (await _moreLinks.json()) as Link[];
+    const links = await fetch("/links.json");
+    const moreLinks = await fetch("/more-links.json");
 
     return {
       props: {
-        links,
-        moreLinks,
+        links: await links.json(),
+        moreLinks: await moreLinks.json(),
       },
     };
   };
@@ -26,6 +23,8 @@
 
   export let links: Link[];
   export let moreLinks: Link[];
+
+  links.unshift({ href: "/", text: "Home" });
 
   onMount(() => {
     import("bootstrap/js/dist/offcanvas");

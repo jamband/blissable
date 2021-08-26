@@ -3,7 +3,6 @@ import type { RequestHandler } from "@sveltejs/kit";
 export const get: RequestHandler = async () => {
   return {
     body: [
-      { href: "/", text: "Home" },
       { href: "/pagination", text: "Pagination" },
       { href: "/ratio", text: "Ratio" },
       { href: "/form", text: "Form" },

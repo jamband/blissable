@@ -3,13 +3,11 @@
   import type { Link } from "$types/link";
 
   export const load = async ({ fetch }: LoadInput) => {
-    const _links = await fetch("/links.json");
-    const links = (await _links.json()) as Link[];
-    links.shift();
+    const links = await fetch("/links.json");
 
     return {
       props: {
-        links,
+        links: await links.json(),
       },
     };
   };
