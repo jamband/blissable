@@ -22,25 +22,13 @@
 
 <Page />
 {#each links as { href, text } (href)}
-  <ul class="nav flex-column">
-    <li class="nav-item">
+  <ul class="list-unstyled">
+    <li>
       <h2>
-        <a sveltekit:prefetch {href} class="nav-link"
-          >{text}<IconChevronRight size="0.6em" class="ms-1" /></a
+        <a sveltekit:prefetch {href}
+          >{text}<IconChevronRight size="0.5em" class="ms-2" /></a
         >
       </h2>
     </li>
   </ul>
 {/each}
-
-<style lang="scss">
-  @import "../styles/variables";
-
-  a {
-    border-radius: $border-radius;
-
-    &:hover {
-      background-color: var(--bs-secondary);
-    }
-  }
-</style>
