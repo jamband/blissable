@@ -17,7 +17,7 @@
     "@fullhuman/postcss-purgecss": "^4.0.3",
     "@popperjs/core": "^2.9.3",
     "@sveltejs/adapter-static": "^1.0.0-next.17",
-    "@sveltejs/kit": "^1.0.0-next.156",
+    "@sveltejs/kit": "^1.0.0-next.158",
     "@types/bootstrap": "^5.1.2",
     "@types/html-minifier-terser": "^5.1.2",
     "@typescript-eslint/eslint-plugin": "^4.29.3",
