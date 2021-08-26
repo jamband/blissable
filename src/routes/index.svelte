@@ -27,7 +27,7 @@
   <ul class="nav flex-column">
     <li class="nav-item">
       <h2>
-        <a {href} class="nav-link"
+        <a sveltekit:prefetch {href} class="nav-link"
           >{text}<IconChevronRight size="0.6em" class="ms-1" /></a
         >
       </h2>
