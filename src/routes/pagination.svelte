@@ -1,8 +1,8 @@
 <script lang="ts">
   import { page } from "$app/stores";
-  import { Block } from "$components/block";
-  import { Pagination } from "$components/pagination";
-  import { Page } from "$layouts/page";
+  import { Block } from "~/components/block";
+  import { Pagination } from "~/components/pagination";
+  import { Page } from "~/layouts/page";
 
   const lastPage = 10;
   $: currentPage = Number($page.query.get("page")) || 1;

@@ -1,8 +1,8 @@
 <script lang="ts">
-  import { Button } from "$components/button";
-  import { IconInfoCircleFill } from "$icons";
-  import { Page } from "$layouts/page";
-  import { notification } from "$stores/notification";
+  import { Button } from "~/components/button";
+  import { IconInfoCircleFill } from "~/icons";
+  import { Page } from "~/layouts/page";
+  import { notification } from "~/stores/notification";
 
   const now = () => {
     const date = new Date();

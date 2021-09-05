@@ -1,6 +1,6 @@
 <script lang="ts" context="module">
   import type { LoadInput } from "@sveltejs/kit";
-  import type { Link } from "$types/link";
+  import type { Link } from "~/types/link";
 
   export const load = async ({ fetch }: LoadInput) => {
     const links = await fetch("/links.json");
@@ -14,8 +14,8 @@
 </script>
 
 <script lang="ts">
-  import { IconChevronRight } from "$icons";
-  import { Page } from "$layouts/page";
+  import { IconChevronRight } from "~/icons";
+  import { Page } from "~/layouts/page";
 
   export let links: Link[];
 </script>

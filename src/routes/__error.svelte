@@ -14,9 +14,9 @@
 </script>
 
 <script lang="ts">
-  import { IconChevronLeft, IconInfoCircleFill } from "$icons";
-  import { Page } from "$layouts/page";
-  import { siteHealth } from "$stores/site-health";
+  import { IconChevronLeft, IconInfoCircleFill } from "~/icons";
+  import { Page } from "~/layouts/page";
+  import { siteHealth } from "~/stores/site-health";
 
   export let title: string;
   export let message: string;

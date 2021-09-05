@@ -1,5 +1,5 @@
 <script lang="ts">
-  import { LinkExternal } from "$components/link-external";
+  import { LinkExternal } from "~/components/link-external";
 </script>
 
 <footer class="fixed-bottom py-3 text-center bg-dark">

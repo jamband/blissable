@@ -14,7 +14,7 @@
     "baseUrl": ".",
     "allowJs": true,
     "checkJs": true,
-    "paths": { "$*": ["src/*"] },
+    "paths": { "~/*": ["src/*"] },
     "strict": true
   },
   "include": ["src/**/*.d.ts", "src/**/*.ts", "src/**/*.svelte"]

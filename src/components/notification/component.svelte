@@ -1,5 +1,5 @@
 <script lang="ts">
-  import { notification } from "$stores/notification";
+  import { notification } from "~/stores/notification";
 
   const show = (node: HTMLElement) => {
     if ($notification.show) {

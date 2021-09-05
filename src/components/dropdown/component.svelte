@@ -1,5 +1,5 @@
 <script lang="ts">
-  import { IconChevronDown } from "$icons";
+  import { IconChevronDown } from "~/icons";
   import { onMount } from "svelte";
 
   export let id: string;

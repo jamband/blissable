@@ -1,6 +1,6 @@
 <script lang="ts">
-  import { APP_NAME } from "$constants/app";
-  import { Loading } from "$layouts/loading";
+  import { APP_NAME } from "~/constants/app";
+  import { Loading } from "~/layouts/loading";
 </script>
 
 <header class="fixed-top py-3 text-center bg-dark fw-bold">

@@ -1,8 +1,8 @@
 <script lang="ts">
-  import { Dropdown } from "$components/dropdown";
-  import { DropdownItem } from "$components/dropdown-item";
-  import { Page } from "$layouts/page";
-  import { generateContents } from "$utils/string";
+  import { Dropdown } from "~/components/dropdown";
+  import { DropdownItem } from "~/components/dropdown-item";
+  import { Page } from "~/layouts/page";
+  import { generateContents } from "~/utils/string";
 
   const characters = ["A", "B", "C"];
 

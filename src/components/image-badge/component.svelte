@@ -1,5 +1,5 @@
 <script lang="ts">
-  import { Button } from "$components/button";
+  import { Button } from "~/components/button";
 
   export let color: `#${string}`;
   export let text: string;

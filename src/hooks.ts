@@ -1,19 +1,17 @@
 import { prerendering } from "$app/env";
+import type { Handle } from "@sveltejs/kit";
 import { minify } from "html-minifier-terser";
 
-/** @type {import('@sveltejs/kit').Handle} */
-export const handle = async ({ request, resolve }) => {
+export const handle: Handle = async ({ request, resolve }) => {
   const response = await resolve(request);
 
   if (prerendering && response.headers["content-type"] === "text/html") {
-    response.body = minify(response.body, {
+    response.body = await minify(response.body as string, {
       collapseBooleanAttributes: true,
       collapseWhitespace: true,
       conservativeCollapse: true,
       decodeEntities: true,
-      html5: true,
       ignoreCustomComments: [/^#/],
-      minifyCSS: true,
       minifyJS: true,
       removeAttributeQuotes: true,
       removeComments: true,

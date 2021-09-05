@@ -12,14 +12,7 @@ const config = {
     vite: {
       resolve: {
         alias: {
-          $components: resolve("src/components"),
-          $constants: resolve("src/constants"),
-          $icons: resolve("src/icons"),
-          $layouts: resolve("src/layouts"),
-          $stores: resolve("src/stores"),
-          $styles: resolve("src/styles"),
-          $types: resolve("src/types"),
-          $utils: resolve("src/utils"),
+          "~": resolve("src"),
         },
       },
     },
