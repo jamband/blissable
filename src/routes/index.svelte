@@ -21,14 +21,14 @@
 </script>
 
 <Page />
-{#each links as { href, text } (href)}
-  <ul class="list-unstyled">
-    <li>
+<ul class="list-unstyled">
+  {#each links as { href, text } (href)}
+    <li class="mb-3">
       <h2>
         <a sveltekit:prefetch {href}
           >{text}<IconChevronRight size="0.5em" class="ms-2" /></a
         >
       </h2>
     </li>
-  </ul>
-{/each}
+  {/each}
+</ul>
