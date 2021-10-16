@@ -5,6 +5,7 @@
   import { APP_DESCRIPTION } from "~/constants/app";
   import { Footer } from "~/layouts/footer";
   import { Header } from "~/layouts/header";
+  import { Loading } from "~/layouts/loading";
   import { siteHealth } from "~/stores/site-health";
 
   $: if ($navigating && $siteHealth !== "good") {
@@ -18,6 +19,7 @@
 
 <div class="d-flex flex-column min-vh-100 py-7">
   <Header />
+  <Loading />
   <Notification />
   <div class="container flex-grow-1">
     <slot />
