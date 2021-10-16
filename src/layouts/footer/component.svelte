@@ -6,10 +6,10 @@
   <nav aria-label="Footer navigation">
     <ul class="m-0 list-inline">
       <li class="list-inline-item">
-        <a class="px-3 py-2" href="/about">About</a>
+        <a sveltekit:prefetch class="px-3 py-2" href="/about">About</a>
       </li>
       <li class="list-inline-item">
-        <a class="px-3 py-2" href="/contact">Contact</a>
+        <a sveltekit:prefetch class="px-3 py-2" href="/contact">Contact</a>
       </li>
       <li class="list-inline-item">
         <LinkExternal
