@@ -1,13 +1,20 @@
 module.exports = {
   root: true,
+  env: {
+    browser: true,
+    es2020: true,
+    node: true,
+  },
   parser: "@typescript-eslint/parser",
+  parserOptions: {
+    sourceType: "module",
+  },
+  plugins: ["svelte3", "@typescript-eslint"],
   extends: [
     "eslint:recommended",
     "plugin:@typescript-eslint/recommended",
     "prettier",
   ],
-  plugins: ["svelte3", "@typescript-eslint"],
-  ignorePatterns: ["*.cjs"],
   overrides: [
     {
       files: ["*.svelte"],
@@ -19,15 +26,7 @@ module.exports = {
     "svelte3/ignore-styles": (attributes) =>
       attributes.lang && attributes.lang === "scss",
   },
-  parserOptions: {
-    sourceType: "module",
-    ecmaVersion: 2019,
-  },
-  env: {
-    browser: true,
-    es2017: true,
-    node: true,
-  },
+  ignorePatterns: ["*.cjs"],
   rules: {
     "@typescript-eslint/explicit-module-boundary-types": "off",
   },
