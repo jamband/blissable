@@ -19,5 +19,5 @@
   },
   "editor.formatOnSave": true,
   "eslint.validate": ["svelte"],
-  "typescript.preferences.importModuleSpecifier": "shortest"
+  "typescript.preferences.importModuleSpecifier": "non-relative"
 }
