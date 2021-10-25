@@ -1,10 +1,15 @@
 {
-  "extends": ["stylelint-config-standard"],
-  "plugins": ["stylelint-order", "stylelint-scss"],
+  "extends": ["stylelint-config-standard-scss"],
+  "plugins": ["stylelint-order"],
+  "overrides": [
+    {
+      "files": ["src/**/*.svelte"],
+      "customSyntax": "postcss-html"
+    }
+  ],
   "rules": {
-    "at-rule-no-unknown": null,
-    "declaration-colon-newline-after": null,
+    "alpha-value-notation": "number",
     "order/properties-alphabetical-order": true,
-    "scss/at-rule-no-unknown": true
+    "scss/dollar-variable-colon-space-after": "at-least-one-space"
   }
 }
