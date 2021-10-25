@@ -7,9 +7,8 @@
     "postbuild": "mv build/404/index.html build/404.html && rmdir build/404",
     "preview": "svelte-kit preview",
     "checks": "svelte-check --tsconfig ./tsconfig.json",
-    "prettier": "prettier --check .",
-    "eslint": "eslint .",
     "stylelint": "stylelint **/*.{scss,svelte}",
+    "format": "prettier --check .",
     "clear": "rm -rf .svelte-kit build",
     "clean": "rm -rf .svelte-kit build node_modules"
   },
