@@ -6,9 +6,20 @@
   import { Page } from "~/layouts/page";
 
   let show = false;
+  let disabled = false;
+  let collapseRef: HTMLDivElement;
 
   const toggle = () => {
+    disabled = true;
     show = !show;
+
+    collapseRef.addEventListener("shown.bs.collapse", () => {
+      disabled = false;
+    });
+
+    collapseRef.addEventListener("hidden.bs.collapse", () => {
+      disabled = false;
+    });
   };
 
   onMount(() => {
@@ -20,6 +31,7 @@
 <h1>Collapse</h1>
 <p class="my-3">
   <Button
+    {disabled}
     class="w-25 btn-sm"
     data-bs-toggle="collapse"
     data-bs-target="#exampleCollapse"
@@ -30,7 +42,7 @@
     {show ? "Hide" : "Show"}
   </Button>
 </p>
-<div id="exampleCollapse" class="collapse">
+<div bind:this={collapseRef} id="exampleCollapse" class="collapse">
   <div class="p-3 bg-secondary rounded">
     <IconInfoCircleFill class="me-1" />{APP_DESCRIPTION}
   </div>
