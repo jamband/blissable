@@ -2,8 +2,8 @@
 @import "../../styles/variables";
 
 button {
-  background-color: color.scale($body-bg, $lightness: 5%);
-  border: 1px solid color.scale($body-bg, $lightness: 15%);
+  background-color: color.scale($body-bg, $lightness: 10%);
+  border: 1px solid color.scale($body-bg, $lightness: 20%);
   color: color.scale($body-bg, $lightness: 70%);
 
   &:hover {
