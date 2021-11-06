@@ -2,8 +2,10 @@
   import { Button } from "~/components/button";
   import { Page } from "~/layouts/page";
 
+  type ToggleText = "Continue" | "Pause" | "Start";
+
   let bar = 0;
-  let toggleText = "Start";
+  let toggleText: ToggleText = "Start";
   let interval: number;
 
   $: isCompleted = bar === 100;
@@ -40,7 +42,7 @@
     <Button class="w-25" on:click={toggle} disabled={isCompleted}
       >{toggleText}</Button
     >
-    <Button class="w-25" on:click={clear}>Clear</Button>
+    <Button class="w-25" on:click={clear} disabled={bar === 0}>Clear</Button>
   </div>
 </div>
 <div class="mt-3 mb-1 progress" style="height: 0.5em;">
