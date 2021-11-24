@@ -8,7 +8,6 @@
     }
   ],
   "rules": {
-    "alpha-value-notation": "number",
     "order/properties-alphabetical-order": true,
     "scss/dollar-variable-colon-space-after": "at-least-one-space"
   }
