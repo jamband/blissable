@@ -39,8 +39,10 @@
 </div>
 <div class="text-center">
   {#each contents as content}
-    <span class="p-2 font-monospace" class:mark={isMatchedCharacter(content)}
-      >{content}</span
-    >
+    {#if isMatchedCharacter(content)}
+      <span class="p-2 font-monospace mark">{content}</span>
+    {:else}
+      <span class="p-2 font-monospace">{content}</span>
+    {/if}
   {/each}
 </div>
