@@ -1,18 +1,9 @@
 {
-  "[javascript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[json]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[jsonc]": {
+  "[javascript][json][jsonc][typescript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[svelte]": {
     "editor.defaultFormatter": "svelte.svelte-vscode"
-  },
-  "[typescript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "editor.codeActionsOnSave": {
     "source.fixAll": true
