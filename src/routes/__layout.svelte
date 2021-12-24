@@ -17,7 +17,7 @@
   <meta name="description" content={APP_DESCRIPTION} />
 </svelte:head>
 
-<div class="d-flex flex-column min-vh-100 py-7">
+<div class="d-flex flex-column min-vh-100 py-8">
   <Header />
   <Loading />
   <Notification />
