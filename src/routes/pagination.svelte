@@ -5,7 +5,7 @@
   import { Page } from "~/layouts/page";
 
   const lastPage = 10;
-  $: currentPage = Number($page.query.get("page")) || 1;
+  $: currentPage = Number($page.url.searchParams.get("page")) || 1;
 </script>
 
 <Page title="Pagination" />

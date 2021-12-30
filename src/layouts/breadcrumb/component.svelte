@@ -10,12 +10,12 @@
     if (text === "") {
       return links;
     }
-    links.push({ path: $page.path, text });
+    links.push({ path: $page.url.pathname, text });
     return links;
   };
 
   const isCurrent = (path: string) => {
-    return $page.path === path;
+    return $page.url.pathname === path;
   };
 </script>
 
