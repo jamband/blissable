@@ -1,30 +1,12 @@
-<script lang="ts" context="module">
-  import type { LoadInput } from "@sveltejs/kit";
-  import type { Link } from "~/types/link";
-
-  export const load = async ({ fetch }: LoadInput) => {
-    const links = await fetch("/links.json");
-    const moreLinks = await fetch("/more-links.json");
-
-    return {
-      props: {
-        links: await links.json(),
-        moreLinks: await moreLinks.json(),
-      },
-    };
-  };
-</script>
-
 <script lang="ts">
+  import { onMount } from "svelte";
   import { Button } from "~/components/button";
   import { IconChevronRight } from "~/icons";
   import { Page } from "~/layouts/page";
-  import { onMount } from "svelte";
+  import type { Link } from "~/types/link";
 
   export let links: Link[];
   export let moreLinks: Link[];
-
-  links.unshift({ href: "/", text: "Home" });
 
   onMount(() => {
     import("bootstrap/js/dist/offcanvas");
