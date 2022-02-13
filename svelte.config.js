@@ -7,7 +7,6 @@ const config = {
   preprocess: preprocess(),
   kit: {
     adapter: adapter(),
-    target: "#svelte",
     trailingSlash: "always",
     vite: {
       resolve: {
