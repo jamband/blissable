@@ -8,6 +8,7 @@ const config = {
   kit: {
     adapter: adapter(),
     trailingSlash: "always",
+    inlineStyleThreshold: 1024,
     vite: {
       resolve: {
         alias: {
