@@ -3,10 +3,26 @@
   import { Button } from "~/components/button";
   import { IconChevronRight } from "~/icons";
   import { Page } from "~/layouts/page";
-  import type { Link } from "~/types/link";
 
-  export let links: Link[];
-  export let moreLinks: Link[];
+  const links = [
+    { href: "/", text: "Home" },
+    { href: "/pagination", text: "Pagination" },
+    { href: "/ratio", text: "Ratio" },
+    { href: "/form", text: "Form" },
+    { href: "/collapse", text: "Collapse" },
+    { href: "/toast", text: "Toast" },
+    { href: "/alert", text: "Alert" },
+    { href: "/dropdown", text: "Dropdown" },
+    { href: "/progress", text: "Progress" },
+    { href: "/modal", text: "Modal" },
+    { href: "/offcanvas", text: "Offcanvas" },
+  ];
+
+  const moreLinks = [
+    { href: "/about", text: "About" },
+    { href: "/contact", text: "Contact" },
+    { href: "https://github.com/jamband/blissable", text: "GitHub" },
+  ];
 
   onMount(() => {
     import("bootstrap/js/dist/offcanvas");

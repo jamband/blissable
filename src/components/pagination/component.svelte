@@ -1,8 +1,9 @@
 <script lang="ts">
   import { onMount } from "svelte";
   import { IconChevronLeft, IconChevronRight } from "~/icons";
-  import type { Part } from "~/types/pagination";
   import { hasTouchScreen } from "~/utils/screen";
+
+  type Part = "first" | "previous" | "next" | "last";
 
   export let currentPage: number;
   export let lastPage: number;
