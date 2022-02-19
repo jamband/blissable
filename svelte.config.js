@@ -10,6 +10,10 @@ const config = {
     trailingSlash: "always",
     inlineStyleThreshold: 1024,
     vite: {
+      optimizeDeps: {
+        include: ["svelte/internal"],
+        exclude: ["svelte/animate", "svelte/easing"],
+      },
       resolve: {
         alias: {
           "~": resolve("src"),
