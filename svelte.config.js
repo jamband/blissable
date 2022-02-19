@@ -12,7 +12,7 @@ const config = {
     vite: {
       optimizeDeps: {
         include: ["svelte/internal"],
-        exclude: ["svelte/animate", "svelte/easing"],
+        exclude: ["svelte/animate"],
       },
       resolve: {
         alias: {
