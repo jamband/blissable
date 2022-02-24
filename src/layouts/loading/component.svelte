@@ -1,18 +1,18 @@
 <script lang="ts">
-  import { navigating } from "$app/stores";
+  import { afterNavigate, beforeNavigate } from "$app/navigation";
   import { Loading } from "~/components/loading";
   import { IconEmojiFrownFill, IconEmojiSmileFill } from "~/icons";
   import { siteHealth } from "~/stores/site-health";
 
   let loading = false;
 
-  $: if ($navigating) {
+  beforeNavigate(() => {
     loading = true;
-  }
+  });
 
-  $: if (!$navigating) {
+  afterNavigate(() => {
     setTimeout(() => (loading = false), 250);
-  }
+  });
 </script>
 
 <div class="loading">

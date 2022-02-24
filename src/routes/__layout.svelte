@@ -1,6 +1,6 @@
 <script lang="ts">
   import "~/styles/app.scss";
-  import { navigating } from "$app/stores";
+  import { beforeNavigate } from "$app/navigation";
   import { Notification } from "~/components/notification";
   import { APP_DESCRIPTION } from "~/constants/app";
   import { Footer } from "~/layouts/footer";
@@ -8,9 +8,11 @@
   import { Loading } from "~/layouts/loading";
   import { siteHealth } from "~/stores/site-health";
 
-  $: if ($navigating && $siteHealth !== "good") {
-    siteHealth.set("good");
-  }
+  beforeNavigate(() => {
+    if ($siteHealth !== "good") {
+      siteHealth.set("good");
+    }
+  });
 </script>
 
 <svelte:head>
