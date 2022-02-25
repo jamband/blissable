@@ -8,6 +8,7 @@ module.exports = {
   parser: "@typescript-eslint/parser",
   parserOptions: {
     sourceType: "module",
+    ecmaVersion: 2020,
   },
   plugins: ["svelte3", "@typescript-eslint"],
   extends: [
