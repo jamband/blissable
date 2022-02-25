@@ -1,7 +1,10 @@
 <script lang="ts" context="module">
-  import type { ErrorLoadInput } from "@sveltejs/kit";
+  import type { ErrorLoad } from "@sveltejs/kit";
+  import { IconChevronLeft, IconInfoCircleFill } from "~/icons";
+  import { Page } from "~/layouts/page";
+  import { siteHealth } from "~/stores/site-health";
 
-  export const load = async ({ status }: ErrorLoadInput) => {
+  export const load: ErrorLoad = async ({ status }) => {
     const isNotFound = status === 404;
 
     return {
@@ -14,10 +17,6 @@
 </script>
 
 <script lang="ts">
-  import { IconChevronLeft, IconInfoCircleFill } from "~/icons";
-  import { Page } from "~/layouts/page";
-  import { siteHealth } from "~/stores/site-health";
-
   export let title: string;
   export let message: string;
 
