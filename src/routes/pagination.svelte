@@ -1,5 +1,11 @@
 <script lang="ts" context="module">
-  export const load = async ({ url }: LoadInput) => {
+  import type { Load } from "@sveltejs/kit";
+  import { Block } from "~/components/block";
+  import { Pagination } from "~/components/pagination";
+  import { IconInfoCircleFill } from "~/icons";
+  import { Page } from "~/layouts/page";
+
+  export const load: Load = async ({ url }) => {
     const query = new URL(url.toString()).searchParams;
 
     return {
@@ -11,14 +17,8 @@
 </script>
 
 <script lang="ts">
-  import type { LoadInput } from "@sveltejs/kit";
-  import { Block } from "~/components/block";
-  import { Pagination } from "~/components/pagination";
-  import { IconInfoCircleFill } from "~/icons";
-  import { Page } from "~/layouts/page";
-
-  const lastPage = 10;
   export let currentPage: number;
+  const lastPage = 10;
 </script>
 
 <Page title="Pagination" />
