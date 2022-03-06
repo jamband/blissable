@@ -2,7 +2,6 @@
   import type { Load } from "@sveltejs/kit";
   import { Block } from "~/components/block";
   import { Pagination } from "~/components/pagination";
-  import { IconInfoCircleFill } from "~/icons";
   import { Page } from "~/layouts/page";
 
   export const load: Load = async ({ url }) => {
@@ -33,8 +32,3 @@
   {/each}
 </p>
 <Pagination {currentPage} {lastPage} class="mb-5" />
-<p class="alert bg-secondary">
-  <IconInfoCircleFill />
-  Please note that this page is SSG, so the URL and page status may differ if you
-  reload your browser.
-</p>
