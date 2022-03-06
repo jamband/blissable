@@ -9,6 +9,9 @@ const config = {
     adapter: adapter(),
     trailingSlash: "always",
     inlineStyleThreshold: 1024,
+    prerender: {
+      default: true,
+    },
     vite: {
       optimizeDeps: {
         include: ["svelte/internal"],
