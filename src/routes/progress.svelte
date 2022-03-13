@@ -45,7 +45,7 @@
     <Button class="w-25" on:click={clear} disabled={bar === 0}>Clear</Button>
   </div>
 </div>
-<div class="mt-3 mb-1 progress" style="height: 0.5em;">
+<div class="mt-3 mb-1 progress" style="height: 0.25rem;">
   <div
     class="progress-bar"
     style="width: {bar}%;"

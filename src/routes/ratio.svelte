@@ -31,8 +31,8 @@
     <ImagePlaceholder
       text={ratio}
       textSize="5em"
-      textFill="#b7c2d7"
-      rectFill="#465060"
+      textFill="#b7b4c7"
+      rectFill="#24222b"
       class="rounded shadow-sm font-monospace"
     />
   </div>

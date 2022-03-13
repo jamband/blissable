@@ -3,5 +3,5 @@
 </script>
 
 <header class="fixed-top py-3 text-center bg-dark fw-bold">
-  <a class="p-2 text-primary" href="/">{APP_NAME}</a>
+  <a class="p-3 text-decoration-none text-light" href="/">{APP_NAME}</a>
 </header>

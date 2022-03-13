@@ -35,14 +35,18 @@
       >
     {/each}
   </Dropdown>
-  <button type="button" class="btn btn-link" on:click={reset}>Reset</button>
+  <button
+    type="button"
+    class="btn btn-link text-decoration-none text-body"
+    on:click={reset}>Reset</button
+  >
 </div>
 <div class="text-center">
   {#each contents as content}
     {#if isMatchedCharacter(content)}
-      <span class="p-2 font-monospace mark">{content}</span>
+      <span class="p-2 fw-bold font-monospace text-dark mark">{content}</span>
     {:else}
-      <span class="p-2 font-monospace">{content}</span>
+      <span class="p-2 fw-bold font-monospace">{content}</span>
     {/if}
   {/each}
 </div>

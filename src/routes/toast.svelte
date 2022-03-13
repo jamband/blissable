@@ -31,7 +31,7 @@
 <Page title="Toast" />
 <h1 class="mb-3">Toast</h1>
 <Button on:click={show} disabled={$notification.show}>Show Current Time</Button>
-<div class="mt-3 p-3 bg-secondary rounded">
+<div class="mt-3 p-3 bg-dark text-body rounded">
   <IconInfoCircleFill />
   This notification will continue to be displayed for a certain period of time no
   matter which page you go to.

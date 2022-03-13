@@ -27,7 +27,7 @@
     <Block
       class="me-1"
       size={20}
-      color={currentPage > i ? "#adbad1" : "#516790"}
+      color={currentPage > i ? "#e5b53a" : "#35333c"}
     />
   {/each}
 </p>

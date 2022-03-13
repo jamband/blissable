@@ -2,11 +2,13 @@
 @import "../../styles/variables";
 
 button {
-  background-color: color.scale($body-bg, $lightness: 10%);
-  border: 1px solid color.scale($body-bg, $lightness: 20%);
-  color: color.scale($body-bg, $lightness: 70%);
+  background: $dark;
+  border: 1px solid color.scale($dark, $lightness: 10%);
+  color: $light;
 
   &:hover {
-    background-color: color.scale($body-bg, $lightness: 10%);
+    background: color.scale($dark, $lightness: 10%);
+    border: 1px solid color.scale($dark, $lightness: 20%);
+    color: $light;
   }
 }

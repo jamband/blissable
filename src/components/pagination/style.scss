@@ -3,8 +3,8 @@
 
 .clickable {
   &:hover {
-    background-color: var(--bs-secondary);
-    color: var(--bs-dark);
+    background: var(--bs-dark);
+    color: var(--bs-light);
   }
 }
 

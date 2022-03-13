@@ -2,17 +2,17 @@
 @use "sass:map";
 
 // Color system
-$primary:       #d8dee9;
-$secondary:     #bf616a;
-$success:       #a3be8c;
-$danger:        #bf616a;
-$dark:          #262b34;
+$primary:       #e5b53a;
+$success:       #3aad64;
+$danger:        #f87171;
+$light:         #eceff4;
+$dark:          #24222b;
 $colors: (
 );
 $theme-colors: (
   "primary":      $primary,
-  "secondary":    $secondary,
   "success":      $success,
+  "light":        $light,
   "danger":       $danger,
   "dark":         $dark,
 );
@@ -38,13 +38,12 @@ $spacers: (
 );
 
 // Body
-$body-bg:     #2e3440;
-$body-color:  #d8dee9;
+$body-bg:     #13111a;
+$body-color:  #b7b4c7;
 
 // Links
-$link-color:                              color.scale($body-color, $lightness: -15%);
-$link-hover-color:                        $body-color;
-$link-decoration:                         none;
+$link-color:                              $primary;
+$link-hover-color:                        $primary;
 
 // Grid breakpoints
 $grid-breakpoints: (
@@ -66,20 +65,24 @@ $container-padding-x: 1.5rem;
 $border-radius:                         0.25rem;
 $border-radius-sm:                      0.2rem;
 $box-shadow-sm:                         0 0.125rem 0.25rem color.scale($body-bg, $lightness: -10%, $alpha: -20%);
+$component-active-bg:                   $light;
 
 // Typography
-$text-muted:                            #516790;
-$mark-bg:                               $secondary;
+$text-muted:                            #848194;
+$mark-bg:                               $primary;
 
 // Buttons + Forms
-$input-btn-focus-box-shadow:            0 0 0 0.2rem color.scale($primary, $lightness: 0%, $alpha: -40%);
+$input-btn-focus-box-shadow:            0 0 0 0.2rem color.scale($light, $lightness: 0%, $alpha: -40%);
+
+// Buttons
+$btn-disabled-opacity:        0.5;
 
 // Forms
-$input-bg:                              $dark;
+$input-bg:                              color.scale($dark, $lightness: -70%);
 $input-disabled-bg:                     color.scale($body-bg, $lightness: 10%);
 $input-color:                           $body-color;
 $input-border-color:                    color.scale($body-bg, $lightness: 10%);
-$input-placeholder-color:               color.scale($body-color, $lightness: -55%);
+$input-placeholder-color:               color.scale($text-muted, $lightness: -20%);
 
 // Z-index
 $zindex-toast:                      2000;
@@ -99,19 +102,19 @@ $navbar-dark-toggler-border-color:  transparent;
 
 // Dropdowns
 $dropdown-bg:                       $dark;
-$dropdown-link-color:               $link-color;
-$dropdown-link-hover-color:         $primary;
-$dropdown-link-hover-bg:            $secondary;
+$dropdown-link-color:               $body-color;
+$dropdown-link-hover-color:         $light;
+$dropdown-link-hover-bg:            color.scale($dark, $lightness: 10%);
 $dropdown-link-active-color:        $dark;
-$dropdown-link-active-bg:           $secondary;
+$dropdown-link-active-bg:           $primary;
 
 // Pagination
+$pagination-color:                  $light;
 $pagination-bg:                     transparent;
-$pagination-focus-color:            $dark;
-$pagination-focus-bg:               $secondary;
-$pagination-focus-box-shadow:       0 0 0 0.25rem color.scale($secondary, $lightness: 0%, $alpha: -75%);
+$pagination-focus-color:            $light;
+$pagination-focus-bg:               $dark;
 $pagination-border-width:           0;
-$pagination-hover-color:            $link-color;
+$pagination-hover-color:            $light;
 $pagination-hover-bg:               transparent;
 $pagination-disabled-color:         $text-muted;
 $pagination-disabled-bg:            transparent;
@@ -119,24 +122,24 @@ $pagination-disabled-bg:            transparent;
 // Toasts
 $toast-font-size:                   1rem;
 $toast-color:                       $body-color;
-$toast-background-color:            color.scale($body-bg, $lightness: 10%, $alpha: -10%);
-$toast-border-width:                0;
+$toast-background-color:            $dark;
+$toast-border-width:                1px;
 $toast-box-shadow:                  $box-shadow-sm;
 
 // Modals
 $modal-backdrop-opacity:            0.3;
 
 // Progress bars
-$progress-bg:                       $body-color;
-$progress-border-radius:            0.1rem;
-$progress-bar-bg:                   $secondary;
+$progress-bg:                       color.scale($dark, $lightness: 10%);
+$progress-border-radius:            0.25rem;
+$progress-bar-bg:                   $primary;
 
 // Breadcrumbs
-$breadcrumb-divider-color:          $link-color;
-$breadcrumb-active-color:           $text-muted;
+$breadcrumb-divider-color:          $body-color;
+$breadcrumb-active-color:           $body-color;
 
 // Close
-$btn-close-color:                   $primary;
+$btn-close-color:                   $body-color;
 
 // Offcanvas
 $offcanvas-padding-y:               0.8rem;

@@ -43,7 +43,7 @@
   </Button>
 </p>
 <div bind:this={collapseRef} id="exampleCollapse" class="collapse">
-  <div class="p-3 bg-secondary rounded">
+  <div class="p-3 bg-dark text-body rounded">
     <IconInfoCircleFill class="me-1" />{APP_DESCRIPTION}
   </div>
 </div>

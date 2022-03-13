@@ -10,9 +10,7 @@
 <p>{APP_DESCRIPTION}</p>
 <p>
   This website is an open source project. See
-  <LinkExternal
-    class="text-success text-decoration-underline"
-    href="https://github.com/jamband/blissable"
+  <LinkExternal href="https://github.com/jamband/blissable"
     ><IconGitHub class="me-1" />GitHub jamband/blissable</LinkExternal
   >
   for details.

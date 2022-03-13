@@ -6,15 +6,23 @@
   <nav aria-label="Footer navigation">
     <ul class="m-0 list-inline">
       <li class="list-inline-item">
-        <a sveltekit:prefetch class="px-3 py-2" href="/about">About</a>
+        <a
+          sveltekit:prefetch
+          class="px-4 py-3 text-body text-decoration-none"
+          href="/about">About</a
+        >
       </li>
       <li class="list-inline-item">
-        <a sveltekit:prefetch class="px-3 py-2" href="/contact">Contact</a>
+        <a
+          sveltekit:prefetch
+          class="px-4 py-3 text-body text-decoration-none"
+          href="/contact">Contact</a
+        >
       </li>
       <li class="list-inline-item">
         <LinkExternal
           href="https://github.com/jamband/blissable"
-          class="px-3 py-2">GitHub</LinkExternal
+          class="px-4 py-3 text-body text-decoration-none">GitHub</LinkExternal
         >
       </li>
     </ul>

@@ -15,7 +15,7 @@
 <div class="my-3 text-end">
   <Button on:click={reload}>Reload</Button>
 </div>
-<Alert class="show bg-secondary" dismissible>
+<Alert class="show bg-dark" dismissible>
   <IconInfoCircleFill />
   {APP_DESCRIPTION}
 </Alert>

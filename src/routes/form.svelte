@@ -33,10 +33,10 @@
 <Page title="Form" />
 <h1>Form</h1>
 <div class="my-4 display-5 text-center">
-  <span class="font-monospace">{code}</span>
+  <span class="font-monospace text-light">{code}</span>
   <button
     type="button"
-    class="m-0 p-0 align-baseline btn btn-link"
+    class="m-0 p-0 btn text-decoration-none"
     on:click={refresh}>Refresh</button
   >
 </div>

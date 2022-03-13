@@ -47,7 +47,7 @@
   tabindex="-1"
 >
   <div class="offcanvas-header bg-dark">
-    <h5 id="navigationLabel" class="ms-2 offcanvas-title">Pages</h5>
+    <h5 id="navigationLabel" class="ms-2 offcanvas-title text-light">Pages</h5>
     <button
       type="button"
       class="me-1 btn-close"
@@ -58,7 +58,7 @@
   <div class="p-0 offcanvas-body">
     {#each links as { href, text } (href)}
       <div data-bs-dismiss="offcanvas">
-        <a {href} class="d-flex px-4 nav-link">
+        <a {href} class="d-flex px-4 nav-link text-body">
           <div class="flex-grow-1">{text}</div>
           <div><IconChevronRight size="0.8em" /></div>
         </a>
@@ -67,7 +67,7 @@
     <hr />
     {#each moreLinks as { href, text } (href)}
       <div data-bs-dismiss="offcanvas">
-        <a {href} class="d-flex px-4 nav-link">
+        <a {href} class="d-flex px-4 nav-link text-body">
           <div class="flex-grow-1">{text}</div>
           <div><IconChevronRight size="0.8em" /></div>
         </a>
@@ -87,7 +87,7 @@
 
   .nav-link {
     &:hover {
-      background-color: var(--bs-secondary);
+      background: var(--bs-dark);
     }
   }
 </style>

@@ -8,14 +8,10 @@
 <h1>Contact</h1>
 <p>
   Please to the message via
-  <LinkExternal
-    class="text-success text-decoration-underline"
-    href="https://twitter.com/livejam_db"
+  <LinkExternal href="https://twitter.com/livejam_db"
     ><IconTwitter class="me-1" />Twitter</LinkExternal
   > or
-  <LinkExternal
-    class="text-success text-decoration-underline"
-    href="https://github.com/jamband/blissable/issues"
+  <LinkExternal href="https://github.com/jamband/blissable/issues"
     ><IconGitHub class="me-1" />GitHub Issues</LinkExternal
   >.
 </p>
