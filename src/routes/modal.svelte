@@ -13,9 +13,9 @@
   let text: string;
 
   const images: Image[] = [
-    { color: "#f87171", text: "red" },
-    { color: "#3aad64", text: "green" },
-    { color: "#60a5fa", text: "blue" },
+    { color: "#ed7c7c", text: "red" },
+    { color: "#4b9c69", text: "green" },
+    { color: "#74a7e6", text: "blue" },
   ];
 
   const setImage = (image: Image) => {
