@@ -7,7 +7,6 @@ const config = {
   preprocess: preprocess(),
   kit: {
     adapter: adapter(),
-    trailingSlash: "always",
     inlineStyleThreshold: 1024,
     prerender: {
       default: true,
