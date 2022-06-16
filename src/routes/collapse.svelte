@@ -1,9 +1,9 @@
 <script lang="ts">
   import { onMount } from "svelte";
-  import { Button } from "~/components/button";
-  import { APP_DESCRIPTION } from "~/constants/app";
-  import { IconInfoCircleFill } from "~/icons";
-  import { Page } from "~/layouts/page";
+  import { Button } from "../components/button";
+  import { APP_DESCRIPTION } from "../constants/app";
+  import { IconInfoCircleFill } from "../icons";
+  import { Page } from "../layouts/page";
 
   let show = false;
   let disabled = false;

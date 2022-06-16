@@ -1,6 +1,6 @@
 <script lang="ts">
-  import { Button } from "~/components/button";
-  import { Page } from "~/layouts/page";
+  import { Button } from "../components/button";
+  import { Page } from "../layouts/page";
 
   type ToggleText = "Continue" | "Pause" | "Start";
 

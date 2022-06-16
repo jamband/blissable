@@ -1,8 +1,8 @@
 <script lang="ts" context="module">
   import type { Load } from "@sveltejs/kit";
-  import { IconChevronLeft, IconInfoCircleFill } from "~/icons";
-  import { Page } from "~/layouts/page";
-  import { siteHealth } from "~/stores/site-health";
+  import { IconChevronLeft, IconInfoCircleFill } from "../icons";
+  import { Page } from "../layouts/page";
+  import { siteHealth } from "../stores/site-health";
 
   export const load: Load = async ({ status }) => {
     const isNotFound = status === 404;

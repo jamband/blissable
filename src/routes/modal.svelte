@@ -1,8 +1,8 @@
 <script lang="ts">
-  import { ImageBadge } from "~/components/image-badge";
-  import { ImagePlaceholder } from "~/components/image-placeholder";
-  import { Page } from "~/layouts/page";
   import { onMount } from "svelte";
+  import { ImageBadge } from "../components/image-badge";
+  import { ImagePlaceholder } from "../components/image-placeholder";
+  import { Page } from "../layouts/page";
 
   type Image = {
     color: `#${string}`;

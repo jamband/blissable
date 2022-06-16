@@ -1,7 +1,7 @@
 <script lang="ts">
-  import { LinkExternal } from "~/components/link-external";
-  import { IconGitHub, IconTwitter } from "~/icons";
-  import { Page } from "~/layouts/page";
+  import { LinkExternal } from "../components/link-external";
+  import { IconGitHub, IconTwitter } from "../icons";
+  import { Page } from "../layouts/page";
 </script>
 
 <Page title="Contact" />

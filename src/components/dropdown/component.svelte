@@ -1,6 +1,6 @@
 <script lang="ts">
-  import { IconChevronDown } from "~/icons";
   import { onMount } from "svelte";
+  import { IconChevronDown } from "../../icons";
 
   export let id: string;
   export let label: string;

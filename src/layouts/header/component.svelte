@@ -1,5 +1,5 @@
 <script lang="ts">
-  import { APP_NAME } from "~/constants/app";
+  import { APP_NAME } from "../../constants/app";
 </script>
 
 <header class="fixed-top py-3 text-center bg-dark fw-bold">

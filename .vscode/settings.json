@@ -10,6 +10,7 @@
   },
   "editor.formatOnSave": true,
   "eslint.validate": ["svelte"],
-  "typescript.preferences.importModuleSpecifier": "non-relative",
-  "stylelint.validate": ["css", "scss", "svelte"]
+  "stylelint.validate": ["css", "scss", "svelte"],
+  "svelte.enable-ts-plugin": true,
+  "typescript.preferences.importModuleSpecifier": "relative"
 }

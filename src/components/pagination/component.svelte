@@ -1,7 +1,7 @@
 <script lang="ts">
   import { onMount } from "svelte";
-  import { IconChevronLeft, IconChevronRight } from "~/icons";
-  import { hasTouchScreen } from "~/utils/screen";
+  import { IconChevronLeft, IconChevronRight } from "../../icons";
+  import { hasTouchScreen } from "../../utils/screen";
 
   type Part = "first" | "previous" | "next" | "last";
 

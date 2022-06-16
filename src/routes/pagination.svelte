@@ -1,22 +1,10 @@
-<script lang="ts" context="module">
-  import type { Load } from "@sveltejs/kit";
-  import { Block } from "~/components/block";
-  import { Pagination } from "~/components/pagination";
-  import { Page } from "~/layouts/page";
-
-  export const load: Load = async ({ url }) => {
-    const query = new URL(url.toString()).searchParams;
-
-    return {
-      props: {
-        currentPage: Number(query.get("page")) || 1,
-      },
-    };
-  };
-</script>
-
 <script lang="ts">
-  export let currentPage: number;
+  import { page } from "$app/stores";
+  import { Block } from "../components/block";
+  import { Pagination } from "../components/pagination";
+  import { Page } from "../layouts/page";
+
+  $: currentPage = Number($page.url.searchParams.get("page")) || 1;
   const lastPage = 10;
 </script>
 
