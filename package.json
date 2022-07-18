@@ -5,14 +5,14 @@
     "prepare": "svelte-kit sync",
     "dev": "vite dev",
     "build": "vite build",
-    "postbuild": "mv build/404/index.html build/404.html && rmdir build/404",
+    "postbuild": "node scripts/postbuild.js",
     "preview": "vite preview",
     "checks": "svelte-check --tsconfig ./tsconfig.json",
     "lint": "eslint .",
     "stylelint": "stylelint \"src/**/*.{css,scss,svelte}\"",
     "format": "prettier --check .",
-    "clear": "rm -rf .svelte-kit build",
-    "clean": "rm -rf .svelte-kit build node_modules"
+    "clear": "node scripts/clear.js",
+    "clean": "node scripts/clean.js"
   },
   "devDependencies": {
     "@fullhuman/postcss-purgecss": "^4.1.3",
