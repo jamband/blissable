@@ -10,6 +10,3 @@
   aria-disabled={disabled}
   on:click><slot /></button
 >
-
-<style lang="scss" src="./style.scss">
-</style>

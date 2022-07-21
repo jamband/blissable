@@ -33,7 +33,7 @@
 <h1>Offcanvas</h1>
 <article>
   <Button
-    class="fw-bold"
+    class="btn-dark"
     data-bs-toggle="offcanvas"
     data-bs-target="#exampleOffcanvas"
     aria-controls="exampleOffcanvas"

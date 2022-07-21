@@ -13,7 +13,7 @@
 <Page title="Alert" />
 <h1>Alert</h1>
 <div class="my-3 text-end">
-  <Button on:click={reload}>Reload</Button>
+  <Button on:click={reload} class="btn-dark">Reload</Button>
 </div>
 <Alert class="show bg-dark" dismissible>
   <IconInfoCircleFill />

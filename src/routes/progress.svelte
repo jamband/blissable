@@ -39,10 +39,12 @@
 <h1>Progress</h1>
 <div class="row">
   <div class="my-3 col-6 col-md-4 btn-group btn-group-sm" role="group">
-    <Button class="w-25" on:click={toggle} disabled={isCompleted}
+    <Button class="btn-dark w-25" on:click={toggle} disabled={isCompleted}
       >{toggleText}</Button
     >
-    <Button class="w-25" on:click={clear} disabled={bar === 0}>Clear</Button>
+    <Button class="btn-dark w-25" on:click={clear} disabled={bar === 0}
+      >Clear</Button
+    >
   </div>
 </div>
 <div class="mt-3 mb-1 progress" style="height: 0.25rem;">

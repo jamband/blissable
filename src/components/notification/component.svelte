@@ -31,7 +31,7 @@
         {$notification.message}
       </div>
       <button
-        class="me-3 m-auto btn btn-close"
+        class="me-3 m-auto btn-close"
         on:click={notification.clear}
         data-bs-dismiss="toast"
       />

@@ -19,7 +19,7 @@
   <div class="my-3 btn-group">
     {#each ratios as ratio}
       <Button
-        class="w-25 btn-sm font-monospace"
+        class="btn-dark btn-sm w-25 font-monospace"
         on:click={() => setRatio(ratio)}
         aria-label="Aspect ratio: {ratio}">{ratio}</Button
       >

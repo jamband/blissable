@@ -7,7 +7,7 @@
 
 <Button
   {...$$restProps}
-  class="me-2 mb-3 ps-1 pe-3 py-1 rounded-pill {$$props.class || ''}"
+  class="me-2 mb-3 ps-1 pe-3 py-1 btn-dark rounded-pill {$$props.class || ''}"
   on:click
 >
   <svg

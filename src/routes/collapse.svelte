@@ -32,7 +32,7 @@
 <p class="my-3">
   <Button
     {disabled}
-    class="w-25 btn-sm"
+    class="w-25 btn-dark btn-sm"
     data-bs-toggle="collapse"
     data-bs-target="#exampleCollapse"
     aria-expanded="false"

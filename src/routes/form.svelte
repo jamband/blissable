@@ -36,7 +36,7 @@
   <span class="font-monospace text-light">{code}</span>
   <button
     type="button"
-    class="m-0 p-0 btn text-decoration-none"
+    class="m-0 p-0 btn text-decoration-none shadow-none border-0"
     on:click={refresh}>Refresh</button
   >
 </div>
@@ -58,6 +58,6 @@
       <div class="valid-feedback">Looks Good!</div>
       <div class="invalid-feedback">{errors.code}</div>
     </div>
-    <Button on:click={submit}>Submit</Button>
+    <Button on:click={submit} class="btn-dark">Submit</Button>
   </div>
 </fieldset>
