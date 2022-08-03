@@ -2,7 +2,6 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "prepare": "svelte-kit sync",
     "dev": "vite dev",
     "build": "vite build",
     "postbuild": "node scripts/postbuild.js",
