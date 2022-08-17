@@ -1,9 +1,9 @@
 <script lang="ts">
-  import { Button } from "../components/button";
-  import { Dropdown } from "../components/dropdown";
-  import { DropdownItem } from "../components/dropdown-item";
-  import { Page } from "../layouts/page";
-  import { generateContents } from "../utils/string";
+  import { Button } from "../../components/button";
+  import { Dropdown } from "../../components/dropdown";
+  import { DropdownItem } from "../../components/dropdown-item";
+  import { Page } from "../../layouts/page";
+  import { generateContents } from "../../utils/string";
 
   const characters = ["A", "B", "C"];
 

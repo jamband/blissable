@@ -1,8 +1,8 @@
 <script lang="ts">
-  import { Button } from "../components/button";
-  import { Page } from "../layouts/page";
-  import { focus } from "../utils/focus";
-  import { generateCode } from "../utils/string";
+  import { Button } from "../../components/button";
+  import { Page } from "../../layouts/page";
+  import { focus } from "../../utils/focus";
+  import { generateCode } from "../../utils/string";
 
   const codeLength = 6;
 
