@@ -1,5 +1,4 @@
 <script lang="ts">
-  import { Button } from "../../components/button";
   import { Page } from "../../layouts/page";
   import { focus } from "../../utils/focus";
   import { generateCode } from "../../utils/string";
@@ -34,15 +33,10 @@
 <h1>Form</h1>
 <div class="my-4 display-5 text-center">
   <span class="font-monospace text-light">{code}</span>
-  <button
-    type="button"
-    class="m-0 p-0 btn text-decoration-none shadow-none border-0"
-    on:click={refresh}>Refresh</button
-  >
 </div>
 <fieldset class="row">
   <div class="col-md-6 offset-md-3">
-    <div class="mb-3">
+    <div class="mb-4">
       <label for="code" class="form-label">Code</label>
       <input
         type="text"
@@ -58,6 +52,12 @@
       <div class="valid-feedback">Looks Good!</div>
       <div class="invalid-feedback">{errors.code}</div>
     </div>
-    <Button on:click={submit} class="btn-dark">Submit</Button>
+    <button type="button" class="btn btn-primary" on:click={submit}
+      >Submit</button
+    >
+    <span class="px-2">or</span>
+    <button type="button" class="btn btn-outline-primary" on:click={refresh}
+      >Refresh the code</button
+    >
   </div>
 </fieldset>
