@@ -68,6 +68,7 @@ $box-shadow-sm:                         0 0.125rem 0.25rem color.scale($body-bg,
 $component-active-bg:                   $light;
 
 // Typography
+$font-size-base:                        1rem;
 $headings-color:                        $light;
 $text-muted:                            #848194;
 $mark-bg:                               $primary;
@@ -77,6 +78,7 @@ $mark-bg:                               $primary;
 // Buttons
 
 // Forms
+$form-text-font-size:                   $font-size-base;
 $input-bg:                              color.scale($dark, $lightness: -70%);
 $input-disabled-bg:                     color.scale($body-bg, $lightness: 10%);
 $input-color:                           $body-color;
