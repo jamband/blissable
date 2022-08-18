@@ -1,6 +1,5 @@
 <script lang="ts">
   import { Alert } from "../../components/alert";
-  import { Button } from "../../components/button";
   import { APP_DESCRIPTION } from "../../constants/app";
   import { IconInfoCircleFill } from "../../icons";
   import { Page } from "../../layouts/page";
@@ -13,7 +12,8 @@
 <Page title="Alert" />
 <h1>Alert</h1>
 <div class="my-3 text-end">
-  <Button on:click={reload} class="btn-dark">Reload</Button>
+  <button type="button" class="btn btn-primary" on:click={reload}>Reload</button
+  >
 </div>
 <Alert class="show bg-dark" dismissible>
   <IconInfoCircleFill />

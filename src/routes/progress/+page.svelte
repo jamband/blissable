@@ -1,5 +1,4 @@
 <script lang="ts">
-  import { Button } from "../../components/button";
   import { Page } from "../../layouts/page";
 
   type ToggleText = "Continue" | "Pause" | "Start";
@@ -39,11 +38,17 @@
 <h1>Progress</h1>
 <div class="row">
   <div class="my-3 col-6 col-md-4 btn-group btn-group-sm" role="group">
-    <Button class="btn-dark w-25" on:click={toggle} disabled={isCompleted}
-      >{toggleText}</Button
+    <button
+      type="button"
+      class="btn btn-primary w-25"
+      disabled={isCompleted}
+      on:click={toggle}>{toggleText}</button
     >
-    <Button class="btn-dark w-25" on:click={clear} disabled={bar === 0}
-      >Clear</Button
+    <button
+      type="button"
+      class="btn btn-primary w-25"
+      disabled={bar === 0}
+      on:click={clear}>Clear</button
     >
   </div>
 </div>

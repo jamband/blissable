@@ -1,6 +1,5 @@
 <script lang="ts">
   import { onMount } from "svelte";
-  import { Button } from "../../components/button";
   import { IconChevronRight } from "../../icons";
   import { Page } from "../../layouts/page";
 
@@ -32,12 +31,12 @@
 <Page title="Offcanvas" />
 <h1>Offcanvas</h1>
 <article>
-  <Button
-    class="btn-dark"
+  <button
+    class="btn btn-primary"
     data-bs-toggle="offcanvas"
     data-bs-target="#exampleOffcanvas"
     aria-controls="exampleOffcanvas"
-    >Go to Pages <IconChevronRight size="0.6em" class="ms-1" /></Button
+    >Go to Pages <IconChevronRight size="0.6em" class="ms-1" /></button
   >
 </article>
 <div

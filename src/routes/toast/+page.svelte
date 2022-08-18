@@ -1,5 +1,4 @@
 <script lang="ts">
-  import { Button } from "../../components/button";
   import { IconInfoCircleFill } from "../../icons";
   import { Page } from "../../layouts/page";
   import { notification } from "../../stores/notification";
@@ -30,8 +29,11 @@
 
 <Page title="Toast" />
 <h1 class="mb-3">Toast</h1>
-<Button on:click={show} disabled={$notification.show} class="btn-dark"
-  >Show Current Time</Button
+<button
+  type="button"
+  class="btn btn-primary"
+  disabled={$notification.show}
+  on:click={show}>Show Current Time</button
 >
 <div class="mt-3 p-3 bg-dark text-body rounded">
   <IconInfoCircleFill />

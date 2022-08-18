@@ -1,6 +1,5 @@
 <script lang="ts">
   import { onMount } from "svelte";
-  import { Button } from "../../components/button";
   import { APP_DESCRIPTION } from "../../constants/app";
   import { IconInfoCircleFill } from "../../icons";
   import { Page } from "../../layouts/page";
@@ -30,9 +29,9 @@
 <Page title="Collapse" />
 <h1>Collapse</h1>
 <p class="my-3">
-  <Button
+  <button
     {disabled}
-    class="w-25 btn-dark btn-sm"
+    class="w-25 btn btn-primary"
     data-bs-toggle="collapse"
     data-bs-target="#exampleCollapse"
     aria-expanded="false"
@@ -40,7 +39,7 @@
     on:click={toggle}
   >
     {show ? "Hide" : "Show"}
-  </Button>
+  </button>
 </p>
 <div bind:this={collapseRef} id="exampleCollapse" class="collapse">
   <div class="p-3 bg-dark text-body rounded">

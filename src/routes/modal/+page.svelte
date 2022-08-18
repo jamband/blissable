@@ -32,7 +32,7 @@
 <h1>Modal</h1>
 {#each images as image (image.color)}
   <ImageBadge
-    class="font-monospace"
+    class="font-monospace btn-dark"
     color={image.color}
     text={image.text}
     data-bs-toggle="modal"

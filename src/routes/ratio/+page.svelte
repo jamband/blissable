@@ -1,5 +1,4 @@
 <script lang="ts">
-  import { Button } from "../../components/button";
   import { ImagePlaceholder } from "../../components/image-placeholder";
   import { Page } from "../../layouts/page";
 
@@ -18,10 +17,11 @@
 <div class="row">
   <div class="my-3 btn-group">
     {#each ratios as ratio}
-      <Button
-        class="btn-dark btn-sm w-25 font-monospace"
-        on:click={() => setRatio(ratio)}
-        aria-label="Aspect ratio: {ratio}">{ratio}</Button
+      <button
+        type="button"
+        class="btn btn-primary w-25 font-monospace"
+        aria-label="Aspect ratio: {ratio}"
+        on:click={() => setRatio(ratio)}>{ratio}</button
       >
     {/each}
   </div>

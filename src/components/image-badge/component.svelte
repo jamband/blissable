@@ -1,13 +1,12 @@
 <script lang="ts">
-  import { Button } from "../button";
-
   export let color: `#${string}`;
   export let text: string;
 </script>
 
-<Button
+<button
   {...$$restProps}
-  class="me-2 mb-3 ps-1 pe-3 py-1 btn-dark rounded-pill {$$props.class || ''}"
+  type="button"
+  class="me-2 mb-3 ps-1 pe-3 py-1 btn rounded-pill {$$props.class || ''}"
   on:click
 >
   <svg
@@ -26,4 +25,4 @@
   <div class="d-inline position-relative" style="top: 1px;">
     {text}
   </div>
-</Button>
+</button>
