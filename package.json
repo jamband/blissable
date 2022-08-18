@@ -2,7 +2,7 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "dev": "vite dev",
+    "dev": "vite --open",
     "build": "vite build",
     "postbuild": "node scripts/postbuild.js",
     "preview": "vite preview",
