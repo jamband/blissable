@@ -21,7 +21,7 @@
   {#each links as { href, text } (href)}
     <li class="mb-3">
       <h2>
-        <a sveltekit:prefetch {href} class="text-decoration-none"
+        <a {href} class="text-decoration-none"
           >{text}<IconChevronRight size="0.5em" class="ms-2" /></a
         >
       </h2>
