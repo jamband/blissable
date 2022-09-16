@@ -1,7 +1,7 @@
 <script lang="ts">
-  import { Page } from "../../layouts/page";
-  import { focus } from "../../utils/focus";
-  import { generateCode } from "../../utils/string";
+  import { Page } from "~/layouts/page";
+  import { focus } from "~/utils/focus";
+  import { generateCode } from "~/utils/string";
 
   const codeLength = 6;
 

@@ -1,8 +1,8 @@
 <script lang="ts">
-  import { Alert } from "../../components/alert";
-  import { APP_DESCRIPTION } from "../../constants/app";
-  import { IconInfoCircleFill } from "../../icons";
-  import { Page } from "../../layouts/page";
+  import { Alert } from "~/components/alert";
+  import { APP_DESCRIPTION } from "~/constants/app";
+  import { IconInfoCircleFill } from "~/icons";
+  import { Page } from "~/layouts/page";
 
   const reload = () => {
     window.location.reload();

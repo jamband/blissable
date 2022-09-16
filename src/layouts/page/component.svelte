@@ -1,6 +1,6 @@
 <script lang="ts">
-  import { APP_NAME } from "../../constants/app";
-  import { Breadcrumb } from "../../layouts/breadcrumb";
+  import { APP_NAME } from "~/constants/app";
+  import { Breadcrumb } from "~/layouts/breadcrumb";
 
   export let title = "";
   title = title ? `${title} ･ ${APP_NAME}` : APP_NAME;

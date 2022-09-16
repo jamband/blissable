@@ -1,7 +1,7 @@
 <script lang="ts">
   import { onMount } from "svelte";
-  import { IconChevronRight } from "../../icons";
-  import { Page } from "../../layouts/page";
+  import { IconChevronRight } from "~/icons";
+  import { Page } from "~/layouts/page";
 
   const links = [
     { href: "/", text: "Home" },

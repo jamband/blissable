@@ -8,7 +8,7 @@
   width={size}
   height={size}
   class={$$props.class || ""}
-  view-port="0 0 {size} {size}"
+  viewBox="0 0 {size} {size}"
   role="img"
   aria-label="Block"
 >

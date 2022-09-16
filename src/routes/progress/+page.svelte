@@ -1,5 +1,5 @@
 <script lang="ts">
-  import { Page } from "../../layouts/page";
+  import { Page } from "~/layouts/page";
 
   type ToggleText = "Continue" | "Pause" | "Start";
 
