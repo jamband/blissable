@@ -1,10 +1,4 @@
-import { rmSync } from "fs";
+import { rm } from "node:fs/promises";
 
-/** @type {import("fs").RmOptions} */
-const options = {
-  recursive: true,
-  force: true,
-};
-
-rmSync(".svelte-kit", options);
-rmSync("build", options);
+await rm(".svelte-kit", { recursive: true, force: true });
+await rm("build", { recursive: true, force: true });
