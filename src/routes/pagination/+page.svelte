@@ -54,7 +54,7 @@
     {#each parts as part (part)}
       <li class="page-item w-25" class:disabled={disabled(part)}>
         <a
-          href="/pagination#{currentPage}"
+          href="/pagination/"
           class="page-link"
           class:clickable={!_hasTouchScreen}
           aria-disabled={disabled(part)}

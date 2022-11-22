@@ -3,16 +3,16 @@
   import { Page } from "~/layouts/page";
 
   const links = [
-    { href: "/pagination", text: "Pagination" },
-    { href: "/ratio", text: "Ratio" },
-    { href: "/form", text: "Form" },
-    { href: "/collapse", text: "Collapse" },
-    { href: "/toast", text: "Toast" },
-    { href: "/alert", text: "Alert" },
-    { href: "/dropdown", text: "Dropdown" },
-    { href: "/progress", text: "Progress" },
-    { href: "/modal", text: "Modal" },
-    { href: "/offcanvas", text: "Offcanvas" },
+    { href: "/pagination/", text: "Pagination" },
+    { href: "/ratio/", text: "Ratio" },
+    { href: "/form/", text: "Form" },
+    { href: "/collapse/", text: "Collapse" },
+    { href: "/toast/", text: "Toast" },
+    { href: "/alert/", text: "Alert" },
+    { href: "/dropdown/", text: "Dropdown" },
+    { href: "/progress/", text: "Progress" },
+    { href: "/modal/", text: "Modal" },
+    { href: "/offcanvas/", text: "Offcanvas" },
   ];
 </script>
 
