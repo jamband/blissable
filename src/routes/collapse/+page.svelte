@@ -43,6 +43,9 @@
 </p>
 <div bind:this={collapseRef} id="exampleCollapse" class="collapse">
   <div class="p-3 bg-dark text-body rounded">
-    <IconInfoCircleFill class="me-1" />{APP_DESCRIPTION}
+    <IconInfoCircleFill
+      class="me-1"
+      style="height: 1em; width: 1em; vertical-align: -0.125em;"
+    />{APP_DESCRIPTION}
   </div>
 </div>

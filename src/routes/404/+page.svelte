@@ -8,7 +8,17 @@
 
 <Page title="Not Found" />
 <h1>Not Found</h1>
-<p><IconInfoCircleFill size="0.9em" class="me-1" />Page not found.</p>
+<p>
+  <IconInfoCircleFill
+    class="me-1"
+    style="height: 1em; width: 1em; vertical-align: -0.125em;"
+  />Page not found.
+</p>
 <div class="mt-5 text-center">
-  <a href="/"><IconChevronLeft size="0.7em" class="me-2" />Back to Home</a>
+  <a href="/"
+    ><IconChevronLeft
+      class="me-2"
+      style="height: 1em; width: 1em; vertical-align: -0.125em;"
+    />Back to Home</a
+  >
 </div>

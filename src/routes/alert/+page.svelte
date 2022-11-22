@@ -16,6 +16,8 @@
   >
 </div>
 <Alert class="show bg-dark" dismissible>
-  <IconInfoCircleFill />
+  <IconInfoCircleFill
+    style="height: 1em; width: 1em; vertical-align: -0.125em;"
+  />
   {APP_DESCRIPTION}
 </Alert>

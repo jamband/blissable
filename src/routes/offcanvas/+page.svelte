@@ -36,7 +36,10 @@
     data-bs-toggle="offcanvas"
     data-bs-target="#exampleOffcanvas"
     aria-controls="exampleOffcanvas"
-    >Go to Pages <IconChevronRight size="0.6em" class="ms-1" /></button
+    >Go to Pages <IconChevronRight
+      class="ms-1"
+      style="height: 1em; width: 1em; vertical-align: -0.125em;"
+    /></button
   >
 </article>
 <div
@@ -59,7 +62,11 @@
       <div data-bs-dismiss="offcanvas">
         <a {href} class="d-flex px-4 nav-link text-body">
           <div class="flex-grow-1">{text}</div>
-          <div><IconChevronRight size="0.8em" /></div>
+          <div>
+            <IconChevronRight
+              style="height: 1em; width: 1em; vertical-align: -0.125em;"
+            />
+          </div>
         </a>
       </div>
     {/each}
@@ -68,7 +75,11 @@
       <div data-bs-dismiss="offcanvas">
         <a {href} class="d-flex px-4 nav-link text-body">
           <div class="flex-grow-1">{text}</div>
-          <div><IconChevronRight size="0.8em" /></div>
+          <div>
+            <IconChevronRight
+              style="height: 1em; width: 1em; vertical-align: -0.125em;"
+            />
+          </div>
         </a>
       </div>
     {/each}

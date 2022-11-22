@@ -11,7 +11,10 @@
 <p>
   This website is an open source project. See
   <LinkExternal href="https://github.com/jamband/blissable"
-    ><IconGitHub class="me-1" />GitHub jamband/blissable</LinkExternal
+    ><IconGitHub
+      class="me-1"
+      style="height: 1em; width: 1em; vertical-align: -0.125em;"
+    />GitHub jamband/blissable</LinkExternal
   >
   for details.
 </p>

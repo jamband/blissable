@@ -36,7 +36,9 @@
   on:click={show}>Show Current Time</button
 >
 <div class="mt-3 p-3 bg-dark text-body rounded">
-  <IconInfoCircleFill />
+  <IconInfoCircleFill
+    style="height: 1em; width: 1em; vertical-align: -0.125em;"
+  />
   This notification will continue to be displayed for a certain period of time no
   matter which page you go to.
 </div>

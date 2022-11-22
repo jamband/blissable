@@ -20,7 +20,9 @@
     aria-expanded="false"
   >
     {label}
-    <IconChevronDown size="0.8em" />
+    <IconChevronDown
+      style="height: 1em; width: 1em; vertical-align: -0.125em;"
+    />
   </button>
   <div class="dropdown-menu" aria-labelledby={id}>
     <slot />

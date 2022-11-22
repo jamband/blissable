@@ -22,7 +22,10 @@
     <li class="mb-3">
       <h2>
         <a {href} class="text-decoration-none"
-          >{text}<IconChevronRight size="0.5em" class="ms-2" /></a
+          >{text}<IconChevronRight
+            class="ms-2"
+            style="height: 0.6em; width: 0.6em; vertical-align: 0em;"
+          /></a
         >
       </h2>
     </li>

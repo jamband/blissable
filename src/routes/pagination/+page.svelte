@@ -61,7 +61,10 @@
           tabindex={disabled(part) ? -1 : 0}
           on:click={() => setPage(part)}
         >
-          <svelte:component this={icon(part)} />
+          <svelte:component
+            this={icon(part)}
+            style="height: 1em; width: 1em; vertical-align: -0.125em;"
+          />
           <div class="text">{part}</div>
         </a>
       </li>

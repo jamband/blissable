@@ -19,9 +19,13 @@
   {#if loading}
     <Loading />
   {:else if $siteHealth === "bad"}
-    <IconEmojiFrownFill />
+    <IconEmojiFrownFill
+      style="height: 1em; width: 1em; vertical-align: -0.125em;"
+    />
   {:else}
-    <IconEmojiSmileFill />
+    <IconEmojiSmileFill
+      style="height: 1em; width: 1em; vertical-align: -0.125em;"
+    />
   {/if}
 </div>
 

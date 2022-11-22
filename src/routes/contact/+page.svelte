@@ -9,9 +9,15 @@
 <p>
   Please to the message via
   <LinkExternal href="https://twitter.com/livejam_db"
-    ><IconTwitter class="me-1" />Twitter</LinkExternal
+    ><IconTwitter
+      class="me-1"
+      style="height: 1em; width: 1em; vertical-align: -0.125em;"
+    />Twitter</LinkExternal
   > or
   <LinkExternal href="https://github.com/jamband/blissable/issues"
-    ><IconGitHub class="me-1" />GitHub Issues</LinkExternal
+    ><IconGitHub
+      class="me-1"
+      style="width: 1em; height: 1em; vertical-align: -0.125em;"
+    />GitHub Issues</LinkExternal
   >.
 </p>
