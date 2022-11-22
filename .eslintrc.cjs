@@ -28,7 +28,4 @@ module.exports = {
       attributes.lang && attributes.lang === "scss",
   },
   ignorePatterns: ["*.cjs"],
-  rules: {
-    "@typescript-eslint/explicit-module-boundary-types": "off",
-  },
 };
