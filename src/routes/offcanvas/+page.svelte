@@ -18,8 +18,8 @@
   ];
 
   const moreLinks = [
-    { href: "/about", text: "About" },
-    { href: "/contact", text: "Contact" },
+    { href: "/about/", text: "About" },
+    { href: "/contact/", text: "Contact" },
     { href: "https://github.com/jamband/blissable", text: "GitHub" },
   ];
 
