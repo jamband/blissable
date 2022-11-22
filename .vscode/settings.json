@@ -1,5 +1,5 @@
 {
-  "[javascript][json][jsonc][typescript]": {
+  "[css][javascript][json][jsonc][scss][typescript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[svelte]": {
@@ -10,6 +10,5 @@
   },
   "editor.formatOnSave": true,
   "eslint.validate": ["svelte"],
-  "stylelint.validate": ["css", "scss", "svelte"],
   "svelte.enable-ts-plugin": true
 }
