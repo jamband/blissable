@@ -1,14 +1,12 @@
 import { sveltekit } from "@sveltejs/kit/vite";
-import { resolve } from "path";
+import { resolve } from "node:path";
+import { defineConfig } from "vite";
 
-/** @type {import("vite").UserConfig} */
-const config = {
+export default defineConfig({
   resolve: {
     alias: {
       "~": resolve(__dirname, "./src"),
     },
   },
   plugins: [sveltekit()],
-};
-
-export default config;
+});
