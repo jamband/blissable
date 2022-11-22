@@ -36,21 +36,23 @@
 
 <Page title="Progress" />
 <h1>Progress</h1>
-<div class="row">
-  <div class="my-3 col-6 col-md-4 btn-group btn-group-sm" role="group">
-    <button
-      type="button"
-      class="btn btn-primary w-25"
-      disabled={isCompleted}
-      on:click={toggle}>{toggleText}</button
-    >
-    <button
-      type="button"
-      class="btn btn-primary w-25"
-      disabled={bar === 0}
-      on:click={clear}>Clear</button
-    >
-  </div>
+<div
+  class="my-3 btn-group btn-group-sm w-50"
+  role="group"
+  aria-label="Progress"
+>
+  <button
+    type="button"
+    class="btn btn-primary w-50"
+    disabled={isCompleted}
+    on:click={toggle}>{toggleText}</button
+  >
+  <button
+    type="button"
+    class="btn btn-primary w-50"
+    disabled={bar === 0}
+    on:click={clear}>Clear</button
+  >
 </div>
 <div class="mt-3 mb-1 progress" style="height: 0.25rem;">
   <div
