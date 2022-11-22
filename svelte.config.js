@@ -7,7 +7,6 @@ const config = {
   kit: {
     adapter: adapter(),
     inlineStyleThreshold: 1024,
-    trailingSlash: "always",
   },
 };
 
