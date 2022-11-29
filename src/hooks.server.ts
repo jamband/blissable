@@ -1,11 +1,11 @@
-import { prerendering } from "$app/environment";
+import { building } from "$app/environment";
 import type { Handle } from "@sveltejs/kit";
 import { minify } from "html-minifier-terser";
 
 export const handle: Handle = async ({ event, resolve }) => {
   const response = await resolve(event);
 
-  if (prerendering && response.headers.get("content-type") === "text/html") {
+  if (building && response.headers.get("content-type") === "text/html") {
     const body = await minify(await response.text(), {
       collapseBooleanAttributes: true,
       collapseWhitespace: true,
