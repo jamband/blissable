@@ -1,5 +1,4 @@
 <script lang="ts">
-  import { LinkExternal } from "~/components/link-external";
   import { APP_DESCRIPTION } from "~/constants/app";
   import { IconGitHub } from "~/icons";
   import { Page } from "~/layouts/page";
@@ -10,11 +9,14 @@
 <p>{APP_DESCRIPTION}</p>
 <p>
   This website is an open source project. See
-  <LinkExternal href="https://github.com/jamband/blissable"
+  <a
+    href="https://github.com/jamband/blissable"
+    target="_blank"
+    rel="noreferrer"
     ><IconGitHub
       class="me-1"
       style="height: 1em; width: 1em; vertical-align: -0.125em;"
-    />GitHub jamband/blissable</LinkExternal
+    />GitHub jamband/blissable</a
   >
   for details.
 </p>
