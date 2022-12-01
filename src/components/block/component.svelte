@@ -1,4 +1,6 @@
 <script lang="ts">
+  let className = "";
+  export { className as class };
   export let size: number;
   export let color: string;
 </script>
@@ -7,7 +9,7 @@
   xmlns="http://www.w3.org/2000/svg"
   width={size}
   height={size}
-  class={$$props.class || ""}
+  class={className || undefined}
   viewBox="0 0 {size} {size}"
   role="img"
   aria-label="Block"

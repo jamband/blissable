@@ -1,4 +1,6 @@
 <script lang="ts">
+  let className = "";
+  export { className as class };
   export let color: `#${string}`;
   export let text: string;
 </script>
@@ -6,7 +8,7 @@
 <button
   {...$$restProps}
   type="button"
-  class="me-2 mb-3 ps-1 pe-3 py-1 btn rounded-pill {$$props.class || ''}"
+  class="me-2 mb-3 ps-1 pe-3 py-1 btn rounded-pill {className}"
   on:click
 >
   <svg

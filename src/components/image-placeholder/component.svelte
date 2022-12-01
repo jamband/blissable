@@ -1,4 +1,6 @@
 <script lang="ts">
+  let className = "";
+  export { className as class };
   export let text: string;
   export let textSize: `${string}em` | `${string}rem`;
   export let textFill: `#${string}`;
@@ -7,7 +9,7 @@
 </script>
 
 <svg
-  class={$$props.class || ""}
+  class={className || undefined}
   width="100%"
   {height}
   xmlns="http://www.w3.org/2000/svg"

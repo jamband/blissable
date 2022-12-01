@@ -1,6 +1,8 @@
 <script lang="ts">
   import { onMount } from "svelte";
 
+  let className = "";
+  export { className as class };
   export let dismissible = false;
 
   onMount(() => {
@@ -10,7 +12,7 @@
 
 <div>
   <div
-    class="alert fade {$$props.class || ''}"
+    class="alert fade {className}"
     class:alert-dismissible={dismissible}
     role="alert"
   >

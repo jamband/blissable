@@ -2,6 +2,8 @@
   import { onMount } from "svelte";
   import { IconChevronDown } from "~/icons";
 
+  let className = "";
+  export { className as class };
   export let id: string;
   export let label: string;
   export let buttonStyles: string;
@@ -11,7 +13,7 @@
   });
 </script>
 
-<div class="d-inline-block {$$props.class || ''}">
+<div class="d-inline-block {className}">
   <button
     {id}
     class="btn {buttonStyles}"
