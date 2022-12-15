@@ -24,5 +24,9 @@
   <text x="50%" y="50%" fill={textFill} dy="0.3em">{text}</text>
 </svg>
 
-<style lang="scss" src="./style.scss">
+<style lang="scss">
+  svg {
+    text-anchor: middle;
+    user-select: none;
+  }
 </style>

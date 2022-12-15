@@ -39,5 +39,23 @@
   </div>
 {/if}
 
-<style lang="scss" src="./style.scss">
+<style lang="scss">
+  @import "../../styles/variables";
+  @import "../../../node_modules/bootstrap/scss/mixins/breakpoints";
+
+  .toast {
+    position: fixed;
+    top: 1rem;
+    z-index: $zindex-toast;
+
+    @include media-breakpoint-down(sm) {
+      left: 0;
+      margin: auto;
+      right: 0;
+    }
+
+    @include media-breakpoint-up(sm) {
+      right: 1rem;
+    }
+  }
 </style>

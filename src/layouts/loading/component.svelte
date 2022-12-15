@@ -29,5 +29,15 @@
   {/if}
 </div>
 
-<style lang="scss" src="./style.scss">
+<style lang="scss">
+  .loading {
+    color: var(--bs-light);
+    left: 0;
+    margin-left: auto;
+    margin-right: auto;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    top: 80px;
+  }
 </style>
