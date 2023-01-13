@@ -27,5 +27,5 @@ module.exports = {
     "svelte3/ignore-styles": (attributes) =>
       attributes.lang && attributes.lang === "scss",
   },
-  ignorePatterns: ["*.cjs"],
+  ignorePatterns: ["build", "*.cjs"],
 };
