@@ -1,6 +1,6 @@
 <script lang="ts">
-  import { ImagePlaceholder } from "~/components/image-placeholder";
-  import { Page } from "~/layouts/page";
+  import { ImagePlaceholder } from "@/components/image-placeholder";
+  import { Page } from "@/layouts/page";
 
   type Ratio = "21x9" | "16x9" | "4x3" | "1x1";
 

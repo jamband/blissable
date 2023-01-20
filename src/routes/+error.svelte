@@ -1,8 +1,8 @@
 <script lang="ts">
   import { page } from "$app/stores";
-  import { IconChevronLeft, IconInfoCircleFill } from "~/icons";
-  import { Page } from "~/layouts/page";
-  import { siteHealth } from "~/stores/site-health";
+  import { IconChevronLeft, IconInfoCircleFill } from "@/icons";
+  import { Page } from "@/layouts/page";
+  import { siteHealth } from "@/stores/site-health";
 
   const isNotFound = $page.status === 404;
   const title = isNotFound ? "Not Found" : "An Error occured";

@@ -1,7 +1,7 @@
 <script lang="ts">
-  import { APP_DESCRIPTION } from "~/constants/app";
-  import { IconGitHub } from "~/icons";
-  import { Page } from "~/layouts/page";
+  import { APP_DESCRIPTION } from "@/constants/app";
+  import { IconGitHub } from "@/icons";
+  import { Page } from "@/layouts/page";
 </script>
 
 <Page title="About" />

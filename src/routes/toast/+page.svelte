@@ -1,7 +1,7 @@
 <script lang="ts">
-  import { IconInfoCircleFill } from "~/icons";
-  import { Page } from "~/layouts/page";
-  import { notification } from "~/stores/notification";
+  import { IconInfoCircleFill } from "@/icons";
+  import { Page } from "@/layouts/page";
+  import { notification } from "@/stores/notification";
 
   const now = () => {
     const date = new Date();

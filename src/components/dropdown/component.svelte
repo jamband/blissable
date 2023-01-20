@@ -1,6 +1,6 @@
 <script lang="ts">
+  import { IconChevronDown } from "@/icons";
   import { onMount } from "svelte";
-  import { IconChevronDown } from "~/icons";
 
   let className = "";
   export { className as class };

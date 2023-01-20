@@ -1,9 +1,9 @@
 <script lang="ts">
+  import { Block } from "@/components/block";
+  import { IconChevronLeft, IconChevronRight } from "@/icons";
+  import { Page } from "@/layouts/page";
+  import { hasTouchScreen } from "@/utils/screen";
   import { onMount } from "svelte";
-  import { Block } from "~/components/block";
-  import { IconChevronLeft, IconChevronRight } from "~/icons";
-  import { Page } from "~/layouts/page";
-  import { hasTouchScreen } from "~/utils/screen";
 
   type Part = "First" | "Previous" | "Next" | "Last";
 

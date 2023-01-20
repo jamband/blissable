@@ -1,12 +1,12 @@
 <script lang="ts">
   import { beforeNavigate } from "$app/navigation";
-  import { APP_DESCRIPTION } from "~/constants/app";
-  import { Footer } from "~/layouts/footer";
-  import { Header } from "~/layouts/header";
-  import { Loading } from "~/layouts/loading";
-  import { Notification } from "~/layouts/notification";
-  import { siteHealth } from "~/stores/site-health";
-  import "~/styles/app.scss";
+  import { APP_DESCRIPTION } from "@/constants/app";
+  import { Footer } from "@/layouts/footer";
+  import { Header } from "@/layouts/header";
+  import { Loading } from "@/layouts/loading";
+  import { Notification } from "@/layouts/notification";
+  import { siteHealth } from "@/stores/site-health";
+  import "@/styles/app.scss";
 
   beforeNavigate(() => {
     if ($siteHealth !== "good") {
