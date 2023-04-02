@@ -28,4 +28,7 @@ module.exports = {
       attributes.lang && attributes.lang === "scss",
   },
   ignorePatterns: ["build", "*.cjs"],
+  rules: {
+    "@typescript-eslint/consistent-type-imports": "error",
+  },
 };
