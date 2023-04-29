@@ -41,6 +41,7 @@
 <Page title="Pagination" />
 <h1 class="mb-5">Pagination</h1>
 <div class="mb-5 text-center" aria-label="Pagination information">
+  <!-- eslint-disable-next-line @typescript-eslint/no-unused-vars -->
   {#each Array(lastPage) as _, i}
     <Block
       class="me-1"

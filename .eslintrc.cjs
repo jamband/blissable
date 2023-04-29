@@ -9,24 +9,24 @@ module.exports = {
   parserOptions: {
     sourceType: "module",
     ecmaVersion: 2020,
+    extraFileExtensions: [".svelte"],
   },
-  plugins: ["@typescript-eslint", "svelte3"],
+  plugins: ["@typescript-eslint"],
   extends: [
     "eslint:recommended",
     "plugin:@typescript-eslint/recommended",
+    "plugin:svelte/recommended",
     "prettier",
   ],
   overrides: [
     {
       files: ["*.svelte"],
-      processor: "svelte3/svelte3",
+      parser: "svelte-eslint-parser",
+      parserOptions: {
+        parser: "@typescript-eslint/parser",
+      },
     },
   ],
-  settings: {
-    "svelte3/typescript": () => require("typescript"),
-    "svelte3/ignore-styles": (attributes) =>
-      attributes.lang && attributes.lang === "scss",
-  },
   ignorePatterns: ["build", "*.cjs"],
   rules: {
     "@typescript-eslint/consistent-type-imports": "error",
