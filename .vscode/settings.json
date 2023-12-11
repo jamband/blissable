@@ -5,9 +5,7 @@
   "[svelte]": {
     "editor.defaultFormatter": "svelte.svelte-vscode"
   },
-  "editor.codeActionsOnSave": {
-    "source.fixAll": true
-  },
+  "editor.codeActionsOnSave": { "source.fixAll": "explicit" },
   "editor.formatOnSave": true,
   "eslint.validate": ["svelte"],
   "svelte.enable-ts-plugin": true
