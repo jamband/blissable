@@ -16,7 +16,7 @@
     "@fullhuman/postcss-purgecss": "5.0.0",
     "@popperjs/core": "2.11.8",
     "@sveltejs/adapter-static": "3.0.0",
-    "@sveltejs/kit": "2.0.0",
+    "@sveltejs/kit": "2.0.1",
     "@sveltejs/vite-plugin-svelte": "3.0.1",
     "@types/bootstrap": "5.2.10",
     "@types/html-minifier-terser": "7.0.2",
