@@ -1,6 +1,7 @@
 <script lang="ts">
   import { Block } from "@/components/block";
-  import { IconChevronLeft, IconChevronRight } from "@/icons";
+  import { IconChevronLeft } from "@/icons/chevron-left";
+  import { IconChevronRight } from "@/icons/chevron-right";
   import { Page } from "@/layouts/page";
   import { hasTouchScreen } from "@/utils/screen";
   import { onMount } from "svelte";

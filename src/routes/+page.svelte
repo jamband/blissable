@@ -1,5 +1,5 @@
 <script lang="ts">
-  import { IconChevronRight } from "@/icons";
+  import { IconChevronRight } from "@/icons/chevron-right";
   import { Page } from "@/layouts/page";
 
   const links = [

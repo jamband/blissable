@@ -1,5 +1,5 @@
 <script lang="ts">
-  import { IconInfoCircleFill } from "@/icons";
+  import { IconInfoCircleFill } from "@/icons/info-circle-fill";
   import { Page } from "@/layouts/page";
   import { notification } from "@/stores/notification";
 

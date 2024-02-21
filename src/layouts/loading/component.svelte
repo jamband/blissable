@@ -1,7 +1,8 @@
 <script lang="ts">
   import { afterNavigate, beforeNavigate } from "$app/navigation";
   import { Loading } from "@/components/loading";
-  import { IconEmojiFrownFill, IconEmojiSmileFill } from "@/icons";
+  import { IconEmojiFrownFill } from "@/icons/emoji-frown-fill";
+  import { IconEmojiSmileFill } from "@/icons/emoji-smile-fill";
   import { siteHealth } from "@/stores/site-health";
 
   let loading = false;

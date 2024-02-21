@@ -1,5 +1,6 @@
 <script lang="ts">
-  import { IconChevronLeft, IconInfoCircleFill } from "@/icons";
+  import { IconChevronLeft } from "@/icons/chevron-left";
+  import { IconInfoCircleFill } from "@/icons/info-circle-fill";
   import { Page } from "@/layouts/page";
   import { siteHealth } from "@/stores/site-health";
 

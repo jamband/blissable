@@ -1,5 +1,6 @@
 <script lang="ts">
-  import { IconGitHub, IconTwitter } from "@/icons";
+  import { IconGitHub } from "@/icons/github";
+  import { IconTwitterX } from "@/icons/twitter-x";
   import { Page } from "@/layouts/page";
 </script>
 
@@ -8,10 +9,10 @@
 <p>
   Please to the message via
   <a href="https://twitter.com/livejam_db" target="_blank" rel="noreferrer"
-    ><IconTwitter
+    ><IconTwitterX
       class="me-1"
       style="height: 1em; width: 1em; vertical-align: -0.125em;"
-    />Twitter</a
+    />X</a
   >
   or
   <a

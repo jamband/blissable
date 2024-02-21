@@ -1,6 +1,6 @@
 <script lang="ts">
   import { APP_DESCRIPTION } from "@/constants/app";
-  import { IconGitHub } from "@/icons";
+  import { IconGitHub } from "@/icons/github";
   import { Page } from "@/layouts/page";
 </script>
 
